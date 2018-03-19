@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_anotacoes"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Anotações" />
+        <item
+            android:id="@+id/nav_avaliacoes"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Avaliações" />
+        <item
+            android:id="@+id/nav_calculonotas"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Cálculo de Notas" />
+        <item
+            android:id="@+id/nav_horario"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Horário" />
+        <item
+            android:id="@+id/nav_sobre"
+            android:icon="@drawable/ic_menu_send"
+            android:title="Sobre" />
+    </group>
+
+    <item android:title="Informações">
+        <menu>
+            <item
+                android:id="@+id/nav_ementas"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Ementas" />
+
+        </menu>
+    </item>
+
+</menu>

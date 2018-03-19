@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Introdução</string>
+
+    <string-array name="curso">
+        <item>Informática</item>
+        <item>Administração</item>
+        <item>Vestuário</item>
+    </string-array>
+
+    <string-array name="ano">
+        <item>1º ano</item>
+        <item>2º ano</item>
+        <item>3º ano</item>
+    </string-array>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+
+</resources>
