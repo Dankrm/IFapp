@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Introdução</string>
+    <string name="app_name">Início</string>
 
     <string-array name="curso">
         <item>Informática</item>
@@ -12,8 +12,8 @@
         <item>2º ano</item>
         <item>3º ano</item>
     </string-array>
-    <string name="title_activity_main">MainActivity</string>
 
+    <string name="title_activity_main"></string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
