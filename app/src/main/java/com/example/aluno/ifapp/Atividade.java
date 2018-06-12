@@ -1,10 +1,13 @@
 package com.example.aluno.ifapp;
 
+import java.io.Serializable;
+
 /**
  * Created by aluno on 19/03/18.
  */
 
-public class Atividade {
+public class Atividade implements Serializable {
+    private int pk_atividade;
     private String nome;
     private String dataEntrega;
     private int nota;
@@ -12,6 +15,14 @@ public class Atividade {
 
     public Atividade() {
 
+    }
+
+    public Atividade(int pk_atividade, String nome, String dataEntrega, int nota, Disciplina disciplina) {
+        this.pk_atividade = pk_atividade;
+        this.nome = nome;
+        this.dataEntrega = dataEntrega;
+        this.nota = nota;
+        this.disciplina = disciplina;
     }
 
     public String getNome() {

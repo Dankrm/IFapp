@@ -1,5 +1,8 @@
 package com.example.aluno.ifapp;
 
+import android.content.Context;
+import android.content.Intent;
+import android.database.Cursor;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -12,17 +15,28 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
+
+import com.example.aluno.ifapp.databaseModel.AlunoDAO;
+import com.example.aluno.ifapp.databaseModel.CursoDAO;
+import com.example.aluno.ifapp.databaseModel.MainDatabase;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
+    private MainDatabase db;
+    private CursoDAO cursoDAO;
+    private AlunoDAO alunoDAO;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
 
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -70,23 +84,49 @@ public class MainActivity extends AppCompatActivity
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
-        // Handle navigation view item clicks here.
+
         int id = item.getItemId();
 
         if (id == R.id.nav_anotacoes) {
-            // Handle the camera action
+            startActivity(new Intent(MainActivity.this, TelaAnotacoes.class));
         } else if (id == R.id.nav_avaliacoes) {
-
+            startActivity(new Intent(MainActivity.this, TelaAvaliacoes.class));
         } else if (id == R.id.nav_calculonotas) {
-
+            startActivity(new Intent(MainActivity.this, TelaCalculoNotas.class));
         } else if (id == R.id.nav_horario) {
-
+            startActivity(new Intent(MainActivity.this, TelaHorario.class));
         } else if (id == R.id.nav_sobre) {
-
+            startActivity(new Intent(MainActivity.this, TelaSobre.class));
+        } else if (id == R.id.nav_ementas) {
+            startActivity(new Intent(MainActivity.this, TelaEmentas.class));
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
+
+    public void verAlunos(View view){
+
+        alunoDAO = new AlunoDAO(getApplicationContext());
+        List<Aluno> alunos = alunoDAO.getAlunos();
+
+        for(int i = 0; i<alunos.size(); i++){
+            Aluno aluno = alunos.get(i);
+            System.out.println(aluno.toString());
+        }
+
+    }
+    public void verCursos(View view){
+
+        cursoDAO = new CursoDAO(getApplicationContext());
+        ArrayList<Curso> cursos = cursoDAO.getCursos();
+
+        for(int i = 0; i<cursos.size(); i++){
+            Curso curso = cursos.get(i);
+            System.out.println(curso.toString());
+        }
+
+    }
+
 }

@@ -1,9 +1,9 @@
-<resources>
-    <string name="app_name">Início</string>
+<resources xmlns:android="http://schemas.android.com/tools">
+    <string name="app_name">IFapp</string>
 
     <string-array name="curso">
-        <item>Informática</item>
         <item>Administração</item>
+        <item>Informática</item>
         <item>Vestuário</item>
     </string-array>
 
@@ -13,11 +13,44 @@
         <item>3º ano</item>
     </string-array>
 
-    <string name="title_activity_main"></string>
+
+
+
+
+    <string-array name="vest3ano"></string-array>
+    <string name="ano1">1º Ano</string>
+    <string name="ano2">2º Ano</string>
+    <string name="ano3">3º Ano</string>
+
+    <string name="em">Ensino médio</string>
+    <string name="administracao">Administração</string>
+    <string name="informatica">Informática</string>
+    <string name="vestuario">Vestuário</string>
+
+    <string name="title_activity_main">MainActivity</string>
+
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
-    <string name="action_settings">Settings</string>
+    <string name="action_settings">Configurações</string>
+    <string name="about">Este aplicativo foi desenvolvido por alunos do Instituto Federal Catarinense - Campus Ibirama,
+        Danton Krieck Mohr e Leonardo Alex Fusinato, ambos estudantes do curso técnico integrado em Informática.
+    </string>
+    <string name="apresentacaoleo">Natural de Ibirama, sempre teve interesse na área de informática e música.
+    Pretende seguir na carreira de programador cursando Engenharia de Software na UDESC. </string>
+    <string name="apresentacaodanton">Natural de Rio do Sul, sempre teve interesse na área de informática.
+    Pretende seguir na carreira de programador cursando Engenharia de Software na UDESC.</string>
+    <string name="intementa">A ementa é como um resumo ou sinopse de determinado tema ou área. Quando se fala em “ementa do curso”, significa a apresentação de um texto que evidencia as principais características deste curso. </string>
+    <string name="apresentacaoinfo">O curso Técnico em Informática Integrado ao Ensino Médio oferta disciplinas técnicas relacionadas com a área de TECNOLOGIA DA INFORMAÇÃO (TI) juntamente com as disciplinas tradicionais do ENSINO MÉDIO.
+Na área técnica pode-se dividir o curso em dois eixos: desenvolvimento de sistemas computacionais e manutenção de computadores e redes. As 1.200 horas destinadas à área técnica distribuem esses temas nos três anos do curso.
+</string>
+    <string name="apresentacaoadm">O Curso Técnico em Administração tem por objetivo proporcionar aos estudantes o desenvolvimento de sua autonomia enquanto cidadãos críticos e participativos, visando ao domínio dos conhecimentos científicos e tecnológicos da administração, para atuarem de maneira consciente e responsável diante das necessidades atuais no mundo do trabalho.
+
+</string>
+    <string name="apresentacaovest">O Curso Técnico Integrado ao Ensino Médio em Vestuário objetiva proporcionar aos discentes o desenvolvimento de sua autonomia enquanto cidadãos críticos e participativos, visando o domínio dos conhecimentos científicos e tecnológicos, para atuarem de maneira consciente e responsável diante das necessidades atuais no mundo do trabalho, com foco na formação e a qualificação de profissionais com visão técnica para atuarem na área de confecção do vestuário, aptos a gerenciar e operacionalizar as diversas etapas do processo de produção do vestuário, em empresas da área industrial e de prestação de serviços.
+</string>
+
+    <string name="textocalculonotas">Nesta tela, você poderá calcular tanto as notas mínimas para o trimestre quanto para o exame final do ano letivo. Você também pode acessar a lista das notas registradas. Boa sorte!</string>
 
 
 </resources>
